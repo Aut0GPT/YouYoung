@@ -67,7 +67,7 @@ const WorldIDVerification: React.FC<WorldIDVerificationProps> = ({
       </p>
       
       <IDKitWidget
-        app_id={process.env.NEXT_PUBLIC_APP_ID || 'app_b636a7e558dec2f33f8a449094f7b35e'}
+        app_id={(process.env.NEXT_PUBLIC_APP_ID || 'app_b636a7e558dec2f33f8a449094f7b35e') as `app_${string}`}
         action={process.env.NEXT_PUBLIC_ACTION || 'youyoung-member'}
         onSuccess={handleSuccess}
         handleVerify={verifyProof}

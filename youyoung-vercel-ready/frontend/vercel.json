@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_APP_ID": "app_b636a7e558dec2f33f8a449094f7b35e",
+    "NEXT_PUBLIC_ACTION": "youyoung-member"
+  }
+}

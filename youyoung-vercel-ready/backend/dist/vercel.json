@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MONGODB_URI": "@mongodb-uri",
+    "WORLD_APP_ID": "app_b636a7e558dec2f33f8a449094f7b35e",
+    "WORLD_CLIENT_SECRET": "sk_5c2b08bfa2fe294f850ce132d694c030e4c2dfd23361df51",
+    "FRONTEND_URL": "https://youyoung.vercel.app"
+  }
+}
